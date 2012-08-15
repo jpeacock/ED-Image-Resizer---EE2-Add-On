@@ -11,7 +11,7 @@ Resize images on the fly
 ------------
 1 - Copy pi.ed_imageresizer.php to @system/expressionengine/third_party/ed_imageresizer/
 
-2 - Change cache folder path variable to your config at @system/expressionengine/config/config.php:
+2 - Change cache folder path variable in the plugin file:
 
 `$cache_path = "cache/"; // with a trailing slash`
 
