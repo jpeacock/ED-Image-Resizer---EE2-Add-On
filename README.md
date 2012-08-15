@@ -19,21 +19,21 @@ Resize images on the fly
 
 ### Parameters
 
-* @image@ (string) _required_ : the file to resize
-* @maxWidth@ (integer) : maximum width of the resized image
-* @maxHeight@ (integer) : maximum height of the resized image
-* @forceWidth@ (boolean "yes" or "no", default "no") : will force the width, even if the original's width is less
-* @forceHeight@ (boolean "yes" or "no", default "no") : will force the height, even if the original's height is less
-* @cropratio@ (string format "integer:integer") : crops the image to the defined ratio
-* @cropstart@ (string format "tl" for top left) : where to start the crop using two letter codes (tl, tc, tr, cl, cc, cr, bl, bc, br) defaults to 'cc'
-* @default@ (string) : a backup image to use if the @image@ is not found
-* @alt@ (string) : an alt tag for the image
-* @class@ (string) : a class for the image tag
-* @id@ (string) : an ID for the image tag
-* @title@ (string) : a title for the image tag
-* @href_only@ (boolean "yes" or "no", default "no") : if yes, will return only the href, not the image tag
-* @debug@ (boolean "yes" or "no", default "no") : will optionally output an error message if one is encountered, otherwise will fail silently
-* @grayscale@ (boolean "yes" or "no", default "no") : grayscales the resized image
+* image (string) _required_ : the file to resize
+* maxWidth (integer) : maximum width of the resized image
+* maxHeight (integer) : maximum height of the resized image
+* forceWidth (boolean "yes" or "no", default "no") : will force the width, even if the original's width is less
+* forceHeight (boolean "yes" or "no", default "no") : will force the height, even if the original's height is less
+* cropratio (string format "integer:integer") : crops the image to the defined ratio
+* cropstart (string format "tl" for top left) : where to start the crop using two letter codes (tl, tc, tr, cl, cc, cr, bl, bc, br) defaults to 'cc'
+* default (string) : a backup image to use if the @image@ is not found
+* alt (string) : an alt tag for the image
+* class (string) : a class for the image tag
+* id (string) : an ID for the image tag
+* title (string) : a title for the image tag
+* href_only (boolean "yes" or "no", default "no") : if yes, will return only the href, not the image tag
+* debug (boolean "yes" or "no", default "no") : will optionally output an error message if one is encountered, otherwise will fail silently
+* grayscale (boolean "yes" or "no", default "no") : grayscales the resized image
 
 ### Usage example
 
@@ -49,4 +49,4 @@ Resize images on the fly
 
 Would then output the following:
 
-<img src="http://mysite.com/cache/resized_image.jpg" width="100" height="120" alt="Image description" />
+`<img src="http://mysite.com/cache/resized_image.jpg" width="100" height="120" alt="Image description" />`
