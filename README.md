@@ -3,20 +3,20 @@ ED-Image-Resizer---EE2-Add-On
 
 Resizes images within Expression Engine templates and caches the file. This is a fork of the original plugin at http://devot-ee.com/add-ons/ed-imageresizer. It is more portable because it sets the cache path using $_SERVER['DOCUMENT_ROOT'] instead of having to hard-code the path in the plugin. It also provides an absolute path to the image using EE's config('site_url') variable. 
 
-h1. ED Image resizer for ExpressionEngine 2.x
+ED Image resizer for ExpressionEngine 2.x
 
 Resize images on the fly
 
-h2. Installation
+Installation
 
-# Copy pi.ed_imageresizer.php to @system/expressionengine/third_party/ed_imageresizer/@
-# Change cache folder path variable to your config at @system/expressionengine/config/config.php@:
+Copy pi.ed_imageresizer.php to @system/expressionengine/third_party/ed_imageresizer/
+Change cache folder path variable to your config at @system/expressionengine/config/config.php:
 
-bc. $cache_path = "cache/"; // with a trailing slash
+$cache_path = "cache/"; // with a trailing slash
 
-h2. Usage
+Usage
 
-h3. Parameters
+Parameters
 
 * @image@ (string) _required_ : the file to resize
 * @maxWidth@ (integer) : maximum width of the resized image
@@ -34,9 +34,9 @@ h3. Parameters
 * @debug@ (boolean "yes" or "no", default "no") : will optionally output an error message if one is encountered, otherwise will fail silently
 * @grayscale@ (boolean "yes" or "no", default "no") : grayscales the resized image
 
-h3. Usage example
+Usage example
 
-bc. {exp:ed_imageresizer
+{exp:ed_imageresizer
     image="{my_image_field}"
     default="/images/site/default_image.png"
     maxWidth="100"
@@ -48,4 +48,4 @@ bc. {exp:ed_imageresizer
 
 Would then output the following:
 
-bc. <img src="http://mysite.com/cache/resized_image.jpg" width="100" height="120" alt="Image description" />
+<img src="http://mysite.com/cache/resized_image.jpg" width="100" height="120" alt="Image description" />
