@@ -8,10 +8,9 @@ ED Image resizer for ExpressionEngine 2.x
 Resize images on the fly
 
 Installation
-
+------------
 Copy pi.ed_imageresizer.php to @system/expressionengine/third_party/ed_imageresizer/
 Change cache folder path variable to your config at @system/expressionengine/config/config.php:
-
 $cache_path = "cache/"; // with a trailing slash
 
 Usage
