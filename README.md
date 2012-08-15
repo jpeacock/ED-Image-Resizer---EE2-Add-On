@@ -7,15 +7,17 @@ ED Image resizer for ExpressionEngine 2.x
 
 Resize images on the fly
 
-Installation
+### Installation
 ------------
-Copy pi.ed_imageresizer.php to @system/expressionengine/third_party/ed_imageresizer/
-Change cache folder path variable to your config at @system/expressionengine/config/config.php:
-$cache_path = "cache/"; // with a trailing slash
+1 - Copy pi.ed_imageresizer.php to @system/expressionengine/third_party/ed_imageresizer/
 
-Usage
+2 - Change cache folder path variable to your config at @system/expressionengine/config/config.php:
 
-Parameters
+`$cache_path = "cache/"; // with a trailing slash`
+
+### Usage
+
+### Parameters
 
 * @image@ (string) _required_ : the file to resize
 * @maxWidth@ (integer) : maximum width of the resized image
@@ -33,7 +35,7 @@ Parameters
 * @debug@ (boolean "yes" or "no", default "no") : will optionally output an error message if one is encountered, otherwise will fail silently
 * @grayscale@ (boolean "yes" or "no", default "no") : grayscales the resized image
 
-Usage example
+### Usage example
 
 {exp:ed_imageresizer
     image="{my_image_field}"
